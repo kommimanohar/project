@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./checkout.css" />
+    <title>Codevo - Ecommerce Website</title>
+
+
+
+
+
+    <style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:transparent;  
+}  
+
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: transparent;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #2f2fa2;  
+  color: white;  
+  padding: 10px 10px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 40%;  
+  opacity: 0.9;  
+  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="wrapper container">
+        <div class="logo"><a href="">CartAvenue</a></div>
+        <ul class="nav-list">
+          <div class="top">
+            <label for="" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li>
+            <a href="" class="desktop-item"
+              >Shop <span><i class="fas fa-chevron-down"></i></span
+            ></a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item"
+              >Shop <span><i class="fas fa-chevron-down"></i></span
+            ></label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="./images/woman.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Shop Layout</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Shop With Background</a></li>
+                    <li><a href="#">Shop Mini Categories</a></li>
+                    <li><a href="#">Shop Only Categories</a></li>
+                    <li><a href="#">Shop Icon Categories</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Filter Layout</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Sidebar</a></li>
+                    <li><a href="#">Filter Default</a></li>
+                    <li><a href="#">Filter Drawer</a></li>
+                    <li><a href="#">Filter Dropdown</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Product Layout</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Layout Zoom</a></li>
+                    <li><a href="#">Layout Sticky</a></li>
+                    <li><a href="#">Layout Sticky 2</a></li>
+                    <li><a href="#">Layout Scroll</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Blog</a></li>
+          <li>
+            <a href="" class="desktop-item"
+              >Vendors <span><i class="fas fa-chevron-down"></i></span
+            ></a>
+            <input type="checkbox" id="showdrop1" />
+            <label for="showdrop1" class="mobile-item"
+              >Vendors <span><i class="fas fa-chevron-down"></i></span
+            ></label>
+            <ul class="drop-menu1">
+              <li><a href="">Vendor Store listings</a></li>
+              <li><a href="">Store Details</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="" class="desktop-item"
+              >Page <span><i class="fas fa-chevron-down"></i></span
+            ></a>
+            <input type="checkbox" id="showdrop2" />
+            <label for="showdrop2" class="mobile-item"
+              >Page <span><i class="fas fa-chevron-down"></i></span
+            ></label>
+            <ul class="drop-menu2">
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Faq</a></li>
+              <li><a href="">Page 404</a></li>
+            </ul>
+          </li>
+          <!-- icons -->
+          <li class="icons">
+            <span>
+              <img src="./images/shoppingBag.svg" alt="" />
+              <small class="count d-flex">0</small>
+            </span>
+            <span><img src="./images/search.svg" alt="" /></span>
+          </li>
+        </ul>
+        <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+
+    
+
+
+
+
+    
+<form>  
+  <div class="container">  
+  <br><br><br><br><br><br><br><br>
+  <h1 > Shipping Address </h1>   
+  <hr>  
+  <label><b> Shop Name</label>   
+<input type="text" name="Shop Name" placeholder= "Shop Name" size="15" required />   
+<label> Shop Registration No. </label>   
+<input type="text" name="Shop Registration No." placeholder="Shop Registration No." size="15" required />   
+<label> Proprietor</label>    
+<input type="text" name="Proprietor" placeholder="Proprietor" size="15"required />   
+  
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+ Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  <br><br>
+      <a href="accept_page.html"> <button type="button" class="registerbtn">  <a href="accept_page.html"><strong>Confirm your Order</strong></button> </a>
+       <a href="cart.html"> <button type="button" class="registerbtn">Go back</button>    </a> 
+     </b>   
+</form>  
+
+<!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            Bangalore
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+             support@cartavenue.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            888-888-8888
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+    <!-- Custom Scripts -->
+    <script src="./js/products.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
